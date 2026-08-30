@@ -18,10 +18,10 @@ dwp:
   package:
     version: 1.0.0
     url: https://github.com/YRN-playmaker/dwp-releases/releases/download/clock-desk-1.0.0/clock-desk.dwp
-    integrity: sha512-3qS1mZ8t0kPvV0mYc0kQ4Yq0m8Wq0mZ0mV0kQ0mZ0mV0kQ0mZ0mV0kQ0mZ0mV0kQ0mZ0mV0kQ0mZ0mV0kQ==
-    size: 8192
+    integrity: sha512-ToD/QsPSYJupAFdi0p7yCP7O0HNocmAv27L/ebKuUmP/CIfxsft/tHnRIZxf2twtGRnhvJ94W/PDhIn4qAi6UA==
+    size: 1964
     entry: wallpaper.json
-  thumbnail: https://raw.githubusercontent.com/YRN-playmaker/dwp-releases/main/previews/clock-desk.png
+  thumbnail: https://raw.githubusercontent.com/YRN-playmaker/dwp-releases/main/previews/clock-desk.jpg
   params:
     accent: "#e8f0ff"
 compatibility:

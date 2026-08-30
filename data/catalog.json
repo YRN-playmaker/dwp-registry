@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-30T02:13:17.449Z",
+  "count": 4,
+  "entries": [
+    {
+      "id": "studio.aurora-paid",
+      "name": {
+        "zh": "极光（付费）",
+        "en": "Aurora (Paid)"
+      },
+      "author": "AuroraStudio",
+      "description": "高精度极光粒子场景，含 4K 纹理与多套配色。购买后于 itch.io 获取下载。",
+      "tags": [
+        "aurora",
+        "premium",
+        "particles"
+      ],
+      "license": {
+        "code": "MIT",
+        "content": "proprietary",
+        "commercial": true
+      },
+      "dwp": {
+        "spec": "0.4.1",
+        "width": 3840,
+        "height": 2160,
+        "package": {
+          "version": "1.2.0",
+          "url": "https://aurorastudio.itch.io/aurora-dwp",
+          "integrity": "sha512-0placeholder0integrity0sha5120placeholder0sha5120placeholder0sha5120placeholder0sha5120p==",
+          "size": 4194304,
+          "entry": "wallpaper.json"
+        },
+        "thumbnail": "https://raw.githubusercontent.com/AuroraStudio/aurora-dwp/main/preview.png"
+      },
+      "sales": {
+        "platform": "itch",
+        "url": "https://aurorastudio.itch.io/aurora-dwp",
+        "entitlement": "platform"
+      },
+      "compatibility": {
+        "dsh": ">=0.1.0",
+        "platform": [
+          "web"
+        ]
+      },
+      "featured": false,
+      "updatedAt": "2026-08-29T00:00:00.000Z"
+    },
+    {
+      "id": "yrn.clock-desk",
+      "name": {
+        "zh": "时钟桌面",
+        "en": "Clock Desk"
+      },
+      "author": "YRN-playmaker",
+      "description": "极简实时时钟壁纸：solid 桌面 + 走时时钟 + 暗角，零外部资源。",
+      "tags": [
+        "clock",
+        "minimal"
+      ],
+      "license": {
+        "code": "MIT",
+        "content": "CC-BY-4.0",
+        "commercial": false
+      },
+      "dwp": {
+        "spec": "0.4.1",
+        "width": 1920,
+        "height": 1080,
+        "package": {
+          "version": "1.0.0",
+          "url": "https://github.com/YRN-playmaker/dwp-releases/releases/download/clock-desk-1.0.0/clock-desk.dwp",
+          "integrity": "sha512-3qS1mZ8t0kPvV0mYc0kQ4Yq0m8Wq0mZ0mV0kQ0mZ0mV0kQ0mZ0mV0kQ0mZ0mV0kQ0mZ0mV0kQ0mZ0mV0kQ==",
+          "size": 8192,
+          "entry": "wallpaper.json"
+        },
+        "thumbnail": "https://raw.githubusercontent.com/YRN-playmaker/dwp-releases/main/previews/clock-desk.png",
+        "params": {
+          "accent": "#e8f0ff"
+        }
+      },
+      "compatibility": {
+        "dsh": ">=0.1.0",
+        "platform": [
+          "web"
+        ]
+      },
+      "featured": false,
+      "updatedAt": "2026-08-29T00:00:00.000Z"
+    },
+    {
+      "id": "yrn.puppet-breath",
+      "name": {
+        "zh": "呼吸人偶",
+        "en": "Puppet Breath"
+      },
+      "author": "YRN-playmaker",
+      "description": "骨骼 puppet：呼吸起伏 + 转头 + 眨眼（scale.y），rigid 蒙皮部件。",
+      "tags": [
+        "character",
+        "puppet",
+        "bones"
+      ],
+      "license": {
+        "code": "MIT",
+        "content": "CC-BY-4.0",
+        "commercial": false
+      },
+      "dwp": {
+        "spec": "0.4.1",
+        "width": 1080,
+        "height": 1920,
+        "package": {
+          "version": "1.0.0",
+          "url": "https://github.com/YRN-playmaker/dwp-releases/releases/download/puppet-breath-1.0.0/puppet-breath.dwp",
+          "integrity": "sha512-7yL3mZ8t0kPvV0mYc0kQ4Yq0m8Wq0mZ0mV0kQ0mZ0mV0kQ0mZ0mV0kQ0mZ0mV0kQ0mZ0mV0kQ0mZ0mZ0mZ==",
+          "size": 512000,
+          "entry": "wallpaper.json"
+        },
+        "thumbnail": "https://raw.githubusercontent.com/YRN-playmaker/dwp-releases/main/previews/puppet-breath.png"
+      },
+      "compatibility": {
+        "dsh": ">=0.1.0",
+        "platform": [
+          "web"
+        ]
+      },
+      "featured": false,
+      "updatedAt": "2026-08-29T00:00:00.000Z"
+    },
+    {
+      "id": "yrn.rain-night",
+      "name": {
+        "zh": "雨夜",
+        "en": "Rain Night"
+      },
+      "author": "YRN-playmaker",
+      "description": "夜雨粒子：双发射器雨滴 + 涟漪扭曲，可 seek 的确定性粒子模拟。",
+      "tags": [
+        "rain",
+        "particles",
+        "ambient"
+      ],
+      "license": {
+        "code": "MIT",
+        "content": "CC-BY-4.0",
+        "commercial": false
+      },
+      "dwp": {
+        "spec": "0.4.1",
+        "width": 1920,
+        "height": 1080,
+        "package": {
+          "version": "1.0.0",
+          "url": "https://github.com/YRN-playmaker/dwp-releases/releases/download/rain-night-1.0.0/rain-night.dwp",
+          "integrity": "sha512-9xK2mZ8t0kPvV0mYc0kQ4Yq0m8Wq0mZ0mV0kQ0mZ0mV0kQ0mZ0mV0kQ0mZ0mV0kQ0mZ0mV0kQ0mZ0mZ0mZ==",
+          "size": 245760,
+          "entry": "wallpaper.json"
+        },
+        "thumbnail": "https://raw.githubusercontent.com/YRN-playmaker/dwp-releases/main/previews/rain-night.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/YRN-playmaker/dwp-releases/main/previews/rain-night-2.png"
+        ],
+        "params": {
+          "density": 0.6,
+          "tint": "#8fb7ff"
+        }
+      },
+      "compatibility": {
+        "dsh": ">=0.1.0",
+        "platform": [
+          "web"
+        ]
+      },
+      "featured": true,
+      "updatedAt": "2026-08-29T00:00:00.000Z"
+    }
+  ]
+}

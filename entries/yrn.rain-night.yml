@@ -1,0 +1,36 @@
+id: yrn.rain-night
+name:
+  zh: 雨夜
+  en: Rain Night
+author: YRN-playmaker
+description: 夜雨粒子：双发射器雨滴 + 涟漪扭曲，可 seek 的确定性粒子模拟。
+tags:
+  - rain
+  - particles
+  - ambient
+license:
+  code: MIT
+  content: CC-BY-4.0
+  commercial: false
+dwp:
+  spec: 0.4.1
+  width: 1920
+  height: 1080
+  package:
+    version: 1.0.0
+    url: https://github.com/YRN-playmaker/dwp-releases/releases/download/rain-night-1.0.0/rain-night.dwp
+    integrity: sha512-9xK2mZ8t0kPvV0mYc0kQ4Yq0m8Wq0mZ0mV0kQ0mZ0mV0kQ0mZ0mV0kQ0mZ0mV0kQ0mZ0mV0kQ0mZ0mZ0mZ==
+    size: 245760
+    entry: wallpaper.json
+  thumbnail: https://raw.githubusercontent.com/YRN-playmaker/dwp-releases/main/previews/rain-night.png
+  screenshots:
+    - https://raw.githubusercontent.com/YRN-playmaker/dwp-releases/main/previews/rain-night-2.png
+  params:
+    density: 0.6
+    tint: "#8fb7ff"
+compatibility:
+  dsh: ">=0.1.0"
+  platform:
+    - web
+featured: true
+updatedAt: 2026-08-29T00:00:00.000Z

@@ -1,0 +1,13 @@
+{
+  "name": "dwp-registry",
+  "version": "0.1.0",
+  "description": "DWP wallpaper registry: sharded YAML entries -> catalog.json. Pure data + zero-dep build/validate.",
+  "license": "CC0-1.0",
+  "type": "module",
+  "main": "src/build.ts",
+  "scripts": {
+    "build": "node src/cli.ts build",
+    "validate": "node src/cli.ts validate",
+    "test": "node --test --experimental-test-isolation=none \"test/*.test.ts\""
+  }
+}

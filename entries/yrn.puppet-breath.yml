@@ -1,0 +1,31 @@
+id: yrn.puppet-breath
+name:
+  zh: 呼吸人偶
+  en: Puppet Breath
+author: YRN-playmaker
+description: 骨骼 puppet：呼吸起伏 + 转头 + 眨眼（scale.y），rigid 蒙皮部件。
+tags:
+  - character
+  - puppet
+  - bones
+license:
+  code: MIT
+  content: CC-BY-4.0
+  commercial: false
+dwp:
+  spec: 0.4.1
+  width: 1080
+  height: 1920
+  package:
+    version: 1.0.0
+    url: https://github.com/YRN-playmaker/dwp-releases/releases/download/puppet-breath-1.0.0/puppet-breath.dwp
+    integrity: sha512-7yL3mZ8t0kPvV0mYc0kQ4Yq0m8Wq0mZ0mV0kQ0mZ0mV0kQ0mZ0mV0kQ0mZ0mV0kQ0mZ0mV0kQ0mZ0mZ0mZ==
+    size: 512000
+    entry: wallpaper.json
+  thumbnail: https://raw.githubusercontent.com/YRN-playmaker/dwp-releases/main/previews/puppet-breath.png
+compatibility:
+  dsh: ">=0.1.0"
+  platform:
+    - web
+featured: false
+updatedAt: 2026-08-29T00:00:00.000Z

@@ -1,0 +1,38 @@
+name: registry
+
+on:
+  push:
+    branches: [main]
+    paths: ['entries/**', 'src/**', 'schema/**']
+  pull_request:
+    paths: ['entries/**']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  validate-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      # 零依赖：直接用 Node 原生 TS 类型剥离跑校验/构建
+      - name: Validate entries
+        run: node --experimental-strip-types src/cli.ts validate
+      - name: Build catalog
+        if: github.event_name == 'push'
+        run: node --experimental-strip-types src/cli.ts build
+      - name: Commit catalog when changed
+        if: github.event_name == 'push'
+        run: |
+          if git diff --quiet -- data/catalog.json; then
+            echo 'catalog up to date.'; exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/catalog.json
+          git commit -m 'chore(registry): regenerate catalog'
+          git push

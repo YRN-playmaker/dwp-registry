@@ -1,0 +1,37 @@
+# 付费示例：内容专有（proprietary），经创作者自售平台分发，平台侧授权。
+# 注册表只收录元数据 + 预览 + 销售外链；.dwp 内容不进本仓、不走 GPL。
+id: studio.aurora-paid
+name:
+  zh: 极光（付费）
+  en: Aurora (Paid)
+author: AuroraStudio
+description: 高精度极光粒子场景，含 4K 纹理与多套配色。购买后于 itch.io 获取下载。
+tags:
+  - aurora
+  - premium
+  - particles
+license:
+  code: MIT
+  content: proprietary
+  commercial: true
+dwp:
+  spec: 0.4.1
+  width: 3840
+  height: 2160
+  package:
+    version: 1.2.0
+    url: https://aurorastudio.itch.io/aurora-dwp
+    integrity: sha512-0placeholder0integrity0sha5120placeholder0sha5120placeholder0sha5120placeholder0sha5120p==
+    size: 4194304
+    entry: wallpaper.json
+  thumbnail: https://raw.githubusercontent.com/AuroraStudio/aurora-dwp/main/preview.png
+sales:
+  platform: itch
+  url: https://aurorastudio.itch.io/aurora-dwp
+  entitlement: platform
+compatibility:
+  dsh: ">=0.1.0"
+  platform:
+    - web
+featured: false
+updatedAt: 2026-08-29T00:00:00.000Z

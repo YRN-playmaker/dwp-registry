@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dwp.dev/registry/entry.schema.json",
+  "title": "DWP Registry Entry",
+  "description": "一条 DWP 壁纸包收录记录（分片 entries/<id>.yml）。校验器 src/entry.ts 与本 schema 保持一致。",
+  "type": "object",
+  "required": ["id", "author", "name", "license", "dwp"],
+  "additionalProperties": true,
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]*$" },
+    "author": { "type": "string", "minLength": 1 },
+    "name": {
+      "type": "object", "required": ["zh", "en"],
+      "properties": { "zh": { "type": "string" }, "en": { "type": "string" } }
+    },
+    "description": { "type": "string" },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "license": {
+      "type": "object", "required": ["code", "content", "commercial"],
+      "properties": {
+        "code": { "type": "string" },
+        "content": { "type": "string", "pattern": "^(?!(?i:.*gpl)).*$", "description": "内容许可永不含 copyleft（GPL 传染）" },
+        "commercial": { "type": "boolean" }
+      }
+    },
+    "dwp": {
+      "type": "object", "required": ["spec", "package", "thumbnail"],
+      "properties": {
+        "spec": { "type": "string", "pattern": "^\\d+\\.\\d+(\\.\\d+)?$" },
+        "width": { "type": "integer" }, "height": { "type": "integer" },
+        "thumbnail": { "type": "string", "pattern": "^https://" },
+        "screenshots": { "type": "array", "items": { "type": "string" } },
+        "params": { "type": "object", "additionalProperties": { "type": ["string", "number", "boolean"] } },
+        "package": {
+          "type": "object", "required": ["version", "url", "integrity", "size"],
+          "properties": {
+            "version": { "type": "string" },
+            "url": { "type": "string", "pattern": "^https://" },
+            "integrity": { "type": "string", "pattern": "^sha512-" },
+            "size": { "type": "integer", "minimum": 1 },
+            "entry": { "type": "string" }
+          }
+        }
+      }
+    },
+    "sales": {
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object", "required": ["platform", "url"],
+          "properties": {
+            "platform": { "enum": ["itch", "afdian", "gumroad", "other"] },
+            "url": { "type": "string", "pattern": "^https://" },
+            "entitlement": { "enum": ["platform", "none"] }
+          }
+        }
+      ]
+    },
+    "compatibility": {
+      "type": "object",
+      "properties": { "dsh": { "type": "string" }, "platform": { "type": "array", "items": { "type": "string" } } }
+    },
+    "featured": { "type": "boolean" },
+    "updatedAt": { "type": "string" }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "license": { "properties": { "commercial": { "const": true } } } } },
+      "then": {
+        "properties": {
+          "license": { "properties": { "content": { "const": "proprietary" } } },
+          "sales": { "type": "object" }
+        },
+        "required": ["sales"]
+      }
+    },
+    {
+      "if": { "properties": { "license": { "properties": { "commercial": { "const": false } } } } },
+      "then": { "properties": { "sales": { "const": null } } }
+    }
+  ]
+}

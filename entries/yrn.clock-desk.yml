@@ -1,0 +1,32 @@
+id: yrn.clock-desk
+name:
+  zh: 时钟桌面
+  en: Clock Desk
+author: YRN-playmaker
+description: 极简实时时钟壁纸：solid 桌面 + 走时时钟 + 暗角，零外部资源。
+tags:
+  - clock
+  - minimal
+license:
+  code: MIT
+  content: CC-BY-4.0
+  commercial: false
+dwp:
+  spec: 0.4.1
+  width: 1920
+  height: 1080
+  package:
+    version: 1.0.0
+    url: https://github.com/YRN-playmaker/dwp-releases/releases/download/clock-desk-1.0.0/clock-desk.dwp
+    integrity: sha512-3qS1mZ8t0kPvV0mYc0kQ4Yq0m8Wq0mZ0mV0kQ0mZ0mV0kQ0mZ0mV0kQ0mZ0mV0kQ0mZ0mV0kQ0mZ0mV0kQ==
+    size: 8192
+    entry: wallpaper.json
+  thumbnail: https://raw.githubusercontent.com/YRN-playmaker/dwp-releases/main/previews/clock-desk.png
+  params:
+    accent: "#e8f0ff"
+compatibility:
+  dsh: ">=0.1.0"
+  platform:
+    - web
+featured: false
+updatedAt: 2026-08-29T00:00:00.000Z

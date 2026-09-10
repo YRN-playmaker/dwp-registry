@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-30T09:55:35.268Z",
-  "count": 2,
+  "generatedAt": "2026-09-10T14:50:16.697Z",
+  "count": 3,
   "entries": [
     {
       "id": "studio.aurora-paid",
@@ -89,6 +89,46 @@
       },
       "featured": false,
       "updatedAt": "2026-08-29T00:00:00.000Z"
+    },
+    {
+      "id": "yrn.deepseek-day-night",
+      "name": {
+        "zh": "DeepSeek 日夜",
+        "en": "DeepSeek Day & Night"
+      },
+      "author": "YRN-playmaker",
+      "description": "按本地时间自动切换的两张全画布壁纸：18:00–06:00 显示夜景图，其余时间显示日景图，边界前后各 10 分钟线性过渡，看不到硬切。",
+      "tags": [
+        "day-night",
+        "time",
+        "minimal"
+      ],
+      "license": {
+        "code": "MIT",
+        "content": "CC-BY-4.0",
+        "commercial": false
+      },
+      "dwp": {
+        "spec": "0.4.1",
+        "width": 1920,
+        "height": 1080,
+        "package": {
+          "version": "1.0.0",
+          "url": "https://github.com/YRN-playmaker/dwp-releases/releases/download/deepseek-day-night-1.0.0/deepseek-day-night.dwp",
+          "integrity": "sha512-+buPHU5Tz1zykSNFVLoAftH1UHYWYDk96GNG0/EEy0bNIljz0JvMO8YWsvmot5qSQxmibKPGy4XZck41+mY/uA==",
+          "size": 145178,
+          "entry": "wallpaper.json"
+        },
+        "thumbnail": "https://raw.githubusercontent.com/YRN-playmaker/dwp-releases/main/previews/deepseek-day-night.png"
+      },
+      "compatibility": {
+        "dsh": ">=0.1.0",
+        "platform": [
+          "web"
+        ]
+      },
+      "featured": false,
+      "updatedAt": "2026-09-10T00:00:00.000Z"
     }
   ]
 }

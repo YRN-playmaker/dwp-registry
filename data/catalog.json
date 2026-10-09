@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-10T15:28:09.612Z",
+  "generatedAt": "2026-10-09T08:23:16.181Z",
   "count": 3,
   "entries": [
     {
@@ -97,7 +97,7 @@
         "en": "DeepSeek Day & Night"
       },
       "author": "YRN-playmaker",
-      "description": "按本地时间自动切换的两张全画布壁纸：18:00–06:00 显示夜景图，其余时间显示日景图，边界前后各 10 分钟线性过渡，看不到硬切。渲染模式「预览 / 捕获」用 1920×1080 图，「增强 / 完整」自动切到 7680×4320 高清图（低档位不下载高清纹理）。",
+      "description": "按本地时间自动切换的两张全画布壁纸：18:00–06:00 显示夜景图，其余时间显示日景图，边界前后各 10 分钟线性过渡，看不到硬切。渲染模式「预览 / 捕获」用 1920×1080 图，「增强 / 完整」自动切到 7680×4320 高清图（低档位不下载高清纹理）。 新增配套插件侧边栏效果：使用 dsh-wallpaper_share 26.10.9-D 或新版，挂载后悬停蓝底，选中项显示深色游鱼；品牌按钮除外。仅更新 DWP 不会为旧版插件启用此效果。",
       "tags": [
         "day-night",
         "time",
@@ -114,10 +114,10 @@
         "width": 1920,
         "height": 1080,
         "package": {
-          "version": "1.1.0",
-          "url": "https://github.com/YRN-playmaker/dwp-releases/releases/download/deepseek-day-night-1.1.0/deepseek-day-night.dwp",
-          "integrity": "sha512-plsStV35xLY2gsNtuENVvrj77X4UimWQdvFK0KqToD/jxP/NPi5WFK7HxctyFrnlPB325lNi0lDXHgcLudvWtw==",
-          "size": 6877667,
+          "version": "1.2.0",
+          "url": "https://github.com/YRN-playmaker/dwp-releases/releases/download/deepseek-day-night-1.2.0/deepseek-day-night.dwp",
+          "integrity": "sha512-6g+oF26Pey6vuLcJng+V0J1DrIcDwiM65H5fabS9jxUPcWC3QXajeSOBEFm0lhupf2li+faS4LBxrUKO860u4g==",
+          "size": 6878533,
           "entry": "wallpaper.json"
         },
         "thumbnail": "https://raw.githubusercontent.com/YRN-playmaker/dwp-releases/main/previews/deepseek-day-night.png"
@@ -129,7 +129,7 @@
         ]
       },
       "featured": false,
-      "updatedAt": "2026-09-10T00:00:00.000Z"
+      "updatedAt": "2026-10-09T00:00:00.000Z"
     }
   ]
 }

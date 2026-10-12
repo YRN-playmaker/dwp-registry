@@ -3,12 +3,14 @@ name:
   zh: DeepSeek 日夜
   en: DeepSeek Day & Night
 author: YRN-playmaker
-description: 按本地时间自动切换的两张全画布壁纸：18:00–06:00 显示夜景图，其余时间显示日景图，边界前后各 10 分钟线性过渡，看不到硬切。渲染模式「预览 / 捕获」用 1920×1080 图，「增强 / 完整」自动切到 7680×4320 高清图（低档位不下载高清纹理）。 新增配套插件侧边栏效果：使用 dsh-wallpaper_share 26.10.9-D 或新版，挂载后悬停蓝底，选中项显示深色游鱼；品牌按钮除外。仅更新 DWP 不会为旧版插件启用此效果。
+description: 日夜壁纸保留本地时间自动切换与 SD/8K 纹理；1.3.0 增加入水展开、水花、倒置人物深度渐变、滚轮下潜及退出动画。水面光斑固定在顶部，随下潜淡出。「完整」模式启用折射焦散与泡泡照明；专注 + 完整时启用 1–4px 呼吸模糊。页面动画需要 dsh-wallpaper_share 26.10.12-D 或新版，标准 DWP 播放器继续显示日夜背景。
 tags:
   - day-night
   - time
   - minimal
   - high-res
+  - underwater
+  - interactive
 license:
   code: MIT
   content: CC-BY-4.0
@@ -18,10 +20,10 @@ dwp:
   width: 1920
   height: 1080
   package:
-    version: 1.2.0
-    url: https://github.com/YRN-playmaker/dwp-releases/releases/download/deepseek-day-night-1.2.0/deepseek-day-night.dwp
-    integrity: sha512-6g+oF26Pey6vuLcJng+V0J1DrIcDwiM65H5fabS9jxUPcWC3QXajeSOBEFm0lhupf2li+faS4LBxrUKO860u4g==
-    size: 6878533
+    version: 1.3.0
+    url: https://github.com/YRN-playmaker/dwp-releases/releases/download/deepseek-day-night-1.3.0/deepseek-day-night.dwp
+    integrity: sha512-EsYjE+Sxzj8kHQXlCIUCOjEV3YnxIaITwFoNpNSNyKI+zkCUYlbGreDO1cIu0tUEby4xzhNY4rBGl4xkirjI3A==
+    size: 11621528
     entry: wallpaper.json
   thumbnail: https://raw.githubusercontent.com/YRN-playmaker/dwp-releases/main/previews/deepseek-day-night.png
 compatibility:
@@ -29,4 +31,4 @@ compatibility:
   platform:
     - web
 featured: false
-updatedAt: 2026-10-09T00:00:00.000Z
+updatedAt: 2026-10-12T00:00:00.000Z

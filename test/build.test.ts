@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtempSync, writeFileSync } from 'node:fs';
+import { mkdtempSync, writeFileSync, readdirSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { assembleCatalog, loadAndValidate, findDuplicateIds, ENTRIES_DIR } from '../src/build.ts';
@@ -21,10 +21,11 @@ test('findDuplicateIds：检出重复', () => {
   assert.deepEqual(findDuplicateIds([entry('x'), entry('y'), entry('x')]), ['x']);
 });
 
-test('loadAndValidate：真实 entries/ 目录 4 条全通过、0 错误', () => {
+test('loadAndValidate：真实 entries/ 目录全部通过、0 错误', () => {
   const { entries, errors } = loadAndValidate(ENTRIES_DIR);
   assert.deepEqual(errors, [], `不应有校验错误：${JSON.stringify(errors)}`);
-  assert.equal(entries.length, 4);
+  const ids = readdirSync(ENTRIES_DIR).filter(name => /\.ya?ml$/.test(name)).map(name => name.replace(/\.ya?ml$/, '')).sort();
+  assert.deepEqual(entries.map(entry => entry.id).sort(), ids);
   assert.ok(entries.some(e => e.license.commercial === true), '应含付费示例');
   assert.ok(entries.some(e => e.license.commercial === false), '应含免费示例');
 });
